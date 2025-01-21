@@ -41,7 +41,6 @@ func main() {
 }
 
 //build a question via csv 2d slice
-
 func parseLines(lines [][]string) []question {
 	ret := make([]question, len(lines))
 
@@ -53,12 +52,10 @@ func parseLines(lines [][]string) []question {
 	}
 	return ret
 }
-
 type question struct {
 	q string
 	a string
 }
-
 func exit(msg string) {
 	fmt.Println(msg)
 	os.Exit(1)
